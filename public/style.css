@@ -1,0 +1,155 @@
+/* Base layout */
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f2ef;
+  color: #222;
+}
+
+/* Header */
+header {
+  background: #7a2e1b;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 34px;
+  letter-spacing: 1px;
+}
+
+header .welcome {
+  font-size: 16px;
+  margin-top: 6px;
+  opacity: 0.95;
+}
+
+/* Buttons Panel */
+.controls {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+  background: #fff8f3;
+}
+
+.controls button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #e3b9a7;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.25s ease;
+}
+
+.controls button:hover {
+  background: #d7a896;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Output container */
+.output {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+/* Menu Cards Grid */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+/* Menu Card */
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
+
+/* Item Title Row */
+.item-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-title strong {
+  font-size: 18px;
+  color: #2c2c2c;
+}
+
+/* Veg/Non-veg badge */
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 12px;
+  background: #4caf50;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.badge.nonveg {
+  background: #c62828;
+}
+
+/* Category */
+.category {
+  font-size: 14px;
+  color: #666;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* Price */
+.price {
+  font-weight: 700;
+  font-size: 16px;
+  color: #3d3d3d;
+}
+
+/* Description */
+.description {
+  margin-top: 12px;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Category List (categories endpoint) */
+.cat-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cat-list li {
+  background: white;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.cat-list li strong {
+  font-size: 18px;
+  color: #7a2e1b;
+}
